@@ -11,10 +11,10 @@ int fact(int n){
 }
 int main()
 {
-    int n;
-    cin>>n;
+    int n,r;
+    cin>>n>>r;
 
-    int ans = fact(n);
+    int ans = fact(n)/fact(r)*fact(n-r);
     cout<<ans<<endl;
 
     return 0;
